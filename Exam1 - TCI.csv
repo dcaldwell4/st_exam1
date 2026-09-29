@@ -1,0 +1,19 @@
+,Weight,,
+EP1,<=0,IllegalArgumentException,
+EP2,0 < weight <=1200,Tier 1,
+EP3,1200 < weight <=3500,Tier 2,
+EP4,>3500,Tier 3,
+BVA1,-1,IllegalArgumentException,
+BVA2,0,IllegalArgumentException,
+BVA3,1,Tier 1,
+BVA4,1199,Tier 1,
+BVA5,1200,Tier 1,
+BVA6,1201,Tier 2,
+BVA7,3499,Tier 2,
+BVA8,3500,Tier 2,
+BVA9,3501,Tier 3,
+,isEV,isCarpool,Result
+DT1,T,T,15%/25% rebate
+DT2,F,T,10%/5% rebate
+DT3,T,F,10%/5% rebate
+DT4,F,F,0%/5% rebate

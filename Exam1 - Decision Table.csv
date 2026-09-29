@@ -1,0 +1,10 @@
+Causes,,,,,,,,,,,
+,,Rule 1,Rule 2,Rule 3,Rule 4,Rule 5,Rule 6,Rule 7,Rule 8,Rule 9,Rule 10
+Weight,<=0,T,F,F,F,F,F,F,F,F,F
+,<=1200,*,T,F,F,F,F,F,F,F,F
+,<=3500,*,*,T,T,T,T,F,F,F,F
+,>3500,*,*,*,*,*,*,T,T,T,T
+EV,,*,F,F,F,T,T,T,T,F,F
+Carpool,,*,F,F,T,F,T,T,F,T,F
+Effect,,,,,,,,,,,
+Outcome,,IllegalArgumentException,"Tier 1, 0% Rebate","Tier 2, 0% Rebate","Tier 2, 10% Rebate","Tier 2, 10% Rebate","Tier 2, 15% Rebate","Tier 3, 25% Rebate","Tier 3, 5% Rebate","Tier 3, 5% Rebate","Tier 3, 5% Rebate"
